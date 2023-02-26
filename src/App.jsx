@@ -8,7 +8,7 @@ function App() {
 
   const [allProducts, setAllProducts] = useState([]);
   const [total, setTotal] = useState(0);
-  const [conuntProducts, setConuntProducts] = useState(0);
+  const [countProducts, setCountProducts] = useState(0);
 
 
   return (
@@ -18,16 +18,16 @@ function App() {
         setAllProducts={setAllProducts}
         total={total}
         setTotal={setTotal}
-        conuntProducts={conuntProducts}
-        setConuntProducts={setConuntProducts}
+        countProducts={countProducts}
+        setCountProducts={setCountProducts}
       />
       <ProductList
         allProducts={allProducts}
         setAllProducts={setAllProducts}
         total={total}
         setTotal={setTotal}
-        conuntProducts={conuntProducts}
-        setConuntProducts={setConuntProducts}
+        countProducts={countProducts}
+        setCountProducts={setCountProducts}
       />
     </>
   )

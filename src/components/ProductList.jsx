@@ -1,7 +1,7 @@
 import React from 'react'
 import { data } from '../data';
 
-export const ProductList = ({ allProducts, setAllProducts }) => {
+export const ProductList = ({ allProducts, setAllProducts, countProducts, setCountProducts, total, setTotal }) => {
 
     const onAddPorudct = (product) => {
 
@@ -12,10 +12,13 @@ export const ProductList = ({ allProducts, setAllProducts }) => {
                     ? { ...item, quantity: item.quantity + 1 }
                     : item
             );
-
+            setTotal(total + product.price * product.quantity);
+            setCountProducts(countProducts + product.quantity);
             return setAllProducts([...products]);
         }
 
+        setTotal(total + product.price * product.quantity);
+        setCountProducts(countProducts + product.quantity);
         setAllProducts([...allProducts, product]);
 
 
@@ -35,7 +38,7 @@ export const ProductList = ({ allProducts, setAllProducts }) => {
                 </figure>
                 <div className="info-product">
                     <h2>{product.nameProduct}</h2>
-                    <p className='price'>Valor ${product.price}</p><p className='price'>Disponibles {product.quantity}</p>
+                    <p className='price'>Valor ${product.price}</p>
                     <button className="btn-add-cart" onClick={() => onAddPorudct(product)}>
                         Añadir al carrito
                     </button>

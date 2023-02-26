@@ -11,7 +11,7 @@ export const data = [
         nameProduct: 'Rata Blanca',
         price: 400,
         urlImage: 'https://i1.sndcdn.com/artworks-000128644847-r8725u-t500x500.jpg',
-        quantity: 10,
+        quantity: 1,
     },
     {
         id: 3,
@@ -32,6 +32,6 @@ export const data = [
         nameProduct: 'Pinck Floyd',
         price: 1000,
         urlImage: 'https://addons-media.operacdn.com/media/CACHE/images/themes/85/82885/1.1-rev1/images/a9390693-b28f-4fd5-8aa4-e625a6497e81/6c25d2c79682141ad99898fc22d3ca62.jpg',
-        quantity: 5,
+        quantity: 1,
     },
 ];
